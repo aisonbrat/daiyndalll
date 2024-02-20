@@ -14,7 +14,7 @@
     .header {
         min-height: 100vh;
         width: 100%;
-        background: url(/public/images/background_pos_4.png);
+        background:linear-gradient(to left, #4926f5, #b476f2);
         background-position: center;
         background-size: cover;
         position: relative;
@@ -49,7 +49,7 @@
     }
     nav .logo {
         text-decoration: none;
-        font-size: 22px;
+        font-size: 36px;
         color: white;
         font-weight: bold;
     }
@@ -57,6 +57,7 @@
         flex: 1;
         text-align: right;
         z-index: 2;
+        /* font-size: 20px; */
         
     }
     /* #ulLinks.active {
@@ -75,7 +76,7 @@
     .nav-links ul li a {
         text-decoration: none;
         color: #fff;
-        font-size: 12px;
+        font-size: 16px;
     }
     .nav-links ul li a:hover {
         color: rgb(0, 196, 0);
@@ -103,9 +104,9 @@
         /* color: rgba(255, 255, 255, 0.642); */
         border: solid 2px rgb(0, 196, 0);
         margin: auto;
-        padding: 4px 8px 4px 8px;
-        border-radius: 16px;
-        background:rgba(0, 196, 0, 0.768) ;
+        padding: 6px 10px 6px 10px;
+        border-radius: 6px;
+        /* background:rgba(0, 196, 0, 0.768) ; */
     }
     .nav-links ul li .login:hover {
         color: white;
@@ -130,14 +131,28 @@
     /* login, sgin up end */
 
     /* text box start */
+    
     .text-box {
         width: 90%;
         color: white;
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: flex;
         text-align: center;
+        justify-content: space-between;
+    }
+
+    .left-col {
+      position: relative;
+      text-align: left;
+      width: 80%;
+      left: 180px;
+    }
+    .image-main {
+      width: 100%;
+
     }
     .text-box h1 {
         font-size: 50px;
@@ -147,21 +162,26 @@
     }
     .text-box .class-pmp {
         color: rgb(255, 246, 230);
+        margin-top: -20px;
+        font-size: 60px;
     }
     .text-box .academy {
         color: rgb(0, 196, 0);
+        font-size: 60px;
+
     }
     .read-btn {
         display: inline-block;
         text-decoration: none;
         color: white;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
         border: solid 2px rgb(0, 196, 0);
         border-radius: 40px;
-        padding: 0px 12px 0px 12px;
-        box-shadow: 0 0 5px 2px rgb(0, 196, 0);
+        padding: 14px 40px 14px 40px;
+        box-shadow: 0 0 2px 2px rgb(0, 196, 0);
         background: rgb(0, 196, 0);
+        margin-top: 40px;
     }
     .read-btn:hover {
         background: transparent;
@@ -169,7 +189,7 @@
         box-shadow: inset 0 0 2px 2px rgb(0, 196, 0);
         border-radius: 40px;
         transition: 0.3s;
-        color: rgb(0, 196, 0);
+        color: rgb(255, 255, 255);
     }
     /* .start-practice {
         position: absolute;
@@ -200,6 +220,7 @@
     }
     .academy1 {
         color: rgb(0, 196, 0);
+
     }
 
     
@@ -265,7 +286,7 @@
         margin: auto;
         text-align: center;
         padding-top: 50px;
-        background: #1d2646;
+        background:linear-gradient(to left, #4926f5, #b476f2);
         /* background: rgb(43, 35, 78); */
     }
     .info .ip {
@@ -345,7 +366,223 @@
         }
     }
 
-
+    .wrapper{
+      max-width: 1090px;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .wrapper .table{
+      background: #fff;
+      width: calc(33% - 20px);
+      padding: 30px 30px;
+      position: relative;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .table .price-section{
+      display: flex;
+      justify-content: center;
+    }
+    .table .price-area{
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      padding: 2px;
+    }
+    .price-area .inner-area{
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      line-height: 117px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .price-area .inner-area .text{
+      font-size: 25px;
+      font-weight: 400;
+      position: absolute;
+      top: -10px;
+      left: 17px;
+    }
+    .price-area .inner-area .price{
+      font-size: 45px;
+      font-weight: 500;
+      margin-left: 16px;
+    }
+    .table .package-name{
+      width: 100%;
+      height: 2px;
+      margin: 35px 0;
+      position: relative;
+    }
+    .table .package-name::before{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 25px;
+      font-weight: 500;
+      background: #fff;
+      padding: 0 15px;
+      transform: translate(-50%, -50%);
+    }
+    .table .features li{
+      margin-bottom: 15px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    }
+    .features li .list-name{
+      font-size: 17px;
+      font-weight: 400;
+    }
+    .features li .icon{
+      font-size: 15px;
+    }
+    .features li .icon.check{
+      color: #2db94d;
+    }
+    .features li .icon.cross{
+      color: #cd3241;
+    }
+    .table .btn{
+      width: 100%;
+      display: flex;
+      margin-top: 35px;
+      justify-content: center;
+    }
+    .table .btn button{
+      width: 80%;
+      height: 50px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      outline: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .table .btn button:hover{
+      border-radius: 5px;
+    }
+    .basic .features li::selection{
+      background: #ffd861;
+    }
+    .basic ::selection,
+    .basic .price-area,
+    .basic .inner-area{
+      background: #ffd861;
+    }
+    .basic .btn button{
+      border: 2px solid #ffd861;
+      background: #fff;
+      color: #ffd861;
+    }
+    .basic .btn button:hover{
+      background: #ffd861;
+      color: #fff;
+    }
+    .premium ::selection,
+    .premium .price-area,
+    .premium .inner-area,
+    .premium .btn button{
+      background: #a26bfa;
+    }
+    .premium .btn button:hover{
+      background: #833af8;
+    }
+    .ultimate ::selection,
+    .ultimate .price-area,
+    .ultimate .inner-area{
+      background: #43ef8b;
+    }
+    .ultimate .btn button{
+      border: 2px solid #43ef8b;
+      color: #43ef8b;
+      background: #fff;
+    }
+    .ultimate .btn button:hover{
+      background: #43ef8b;
+      color: #fff;
+    }
+    .basic .package-name{
+      background: #ffecb3;
+    }
+    .premium .package-name{
+      background: #d0b3ff;
+    }
+    .ultimate .package-name{
+      background: #baf8d4;
+    }
+    .basic .package-name::before{
+      content: "Basic";
+    }
+    .premium .package-name::before{
+      content: "Premium";
+      font-size: 24px;
+    }
+    .ultimate .package-name::before{
+      content: "Super Premium";
+      font-size: 24px;
+    }
+    @media (max-width: 1020px) {
+      .wrapper .table{
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+      }
+    }
+    @media (max-width: 698px) {
+      .wrapper .table{
+        width: 100%;
+      }
+    }
+    ::selection{
+      color: #fff;
+    }
+    .table .ribbon{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      overflow: hidden;
+    }
+    .table .ribbon::before,
+    .table .ribbon::after{
+      position: absolute;
+      content: "";
+      z-index: -1;
+      display: block;
+      border: 7px solid #4606ac;
+      border-top-color: transparent;
+      border-left-color: transparent;
+    }
+    .table .ribbon::before{
+      top: 0px;
+      right: 15px;
+    }
+    .table .ribbon::after{
+      bottom: 15px;
+      left: 0px;
+    }
+    .table .ribbon span{
+      position: absolute;
+      top: 30px;
+      right: 0;
+      transform: rotate(-45deg);
+      width: 200px;
+      background: #a26bfa;
+      padding: 10px 0;
+      color: #fff;
+      text-align: center;
+      font-size: 17px;
+      text-transform: uppercase;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+    }
     /* ============ */
       
       .cards {
@@ -412,7 +649,7 @@
       .card.active .price {
         color: #fff;
       }
-      
+/*       
       .btn {
         margin-top: 1rem;
         height: 45px;
@@ -420,7 +657,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* border-radius: 4px; */
+
         border-radius: 0 20px 20px 0;
         background: linear-gradient(
           135deg,
@@ -432,9 +669,9 @@
         border: 0;
         font-weight: bold;
         margin-bottom: 30px;
-    }
-    .btn:hover {
-        /* height: 50px; */
+    } */
+    /* .btn:hover {
+
         width: 350px;
         transition: 0.5s;
         border-radius: 0;
@@ -448,7 +685,7 @@
     }
     .btn:not(:hover) {
         transition: 0.2s;
-    }
+    } */
       .active-btn {
         background: #fff;
         color: hsl(237, 63%, 64%);
@@ -927,7 +1164,7 @@ line-height: 32px;
    font-family: 'Poppins', sans-serif;
 }
 .back-row {
-    /* background: rgb(53, 45, 61); */
+
     background: rgb(40, 32, 71);
 
     background-size: cover; 
@@ -939,7 +1176,7 @@ line-height: 32px;
 .price-col
 {   
     margin-top: 70px;
-   /* background: #f0fde2; */
+
    padding: 5% 15%;
    background: white;
    border-radius: 15px;
@@ -1592,7 +1829,7 @@ line-height: 32px;
         transform: translate(-50%, -50%);
         text-align: center;
         background: transparent;
-        border: 1px solid rgb(0, 196, 0);
+        border: 3px solid rgb(0, 196, 0);
         border-radius: 50px;
         background: rgba(33, 29, 43, 0);
       }
@@ -1603,16 +1840,18 @@ line-height: 32px;
         padding: 10px 25px 0px 25px;
       }
       .input-area {
-        background: rgb(255, 255, 255);
+        /* background: rgba(255, 255, 255, 0.07); */
         margin-bottom: 25px;
         border-radius: 20px;
         padding: 10px 5px 5px 10px;
+        /* border: 2px solid rgb(0, 196, 0); */
         text-align: left;
       }
       .input-area label {
-        font-size: 16px;
+        font-size: 20px;
         margin-left: 10px;
-        color: rgba(0, 0, 0, 0.815);
+        color: rgba(255, 255, 255, 0.815);
+        margin-bottom: 10px;
       }
       .input-group h3 {
           color: white;
@@ -1621,15 +1860,23 @@ line-height: 32px;
           font-size: 22px;
       }
       .input-group input {
+        color: white;
         outline: none;
         border: none;
         /* border-bottom: 1px solid black; */
         width: 100%;
         /* margin: 10px 10px 10px 10px; */
         /* margin: 0 0 15px; */
-        padding: 10px;
+        padding: 14px 6px 14px 14px;
         font-size: 14px;
-        border-radius: 12px;
+        border-radius: 8px;
+
+        border: 2px solid rgb(0, 196, 0);
+        background-color: rgba(255, 255, 255, 0);
+      }
+      .input-group input::placeholder {
+        color: rgba(255, 255, 255, 0.354);
+        font-size: 18px;
       }
       .input-group button {
         width: 60%;
@@ -1761,7 +2008,9 @@ line-height: 32px;
 
      /* =======PROCESS BLOCK STYLE START========== */
      .process-section {
-         background: rgb(18, 18, 53);
+         /* background: rgb(18, 18, 53); */
+         background:linear-gradient(to left, #4926f5, #b476f2);
+
          padding-top: 20px;
          padding-bottom: 20px;
      }
@@ -1777,9 +2026,9 @@ line-height: 32px;
      .process-block {
          margin-top: 30px;
          margin-bottom: 30px;
-         padding-top: 18px;
-         padding-bottom: 18px;
-        border: 2px solid rgb(162, 13, 165);
+         padding-top: 30px;
+         padding-bottom: 30px;
+        /* border: 2px solid rgb(162, 13, 165); */
         /* border: 2px solid rgb(0, 196, 0); */
         border-radius: 15px;
 
@@ -1790,6 +2039,11 @@ line-height: 32px;
      .process-block:hover {
         background: rgba(162, 13, 165, 0.16);
         transition: 0.5s;
+     }
+     .process-title {
+      font-size: 24px;
+      /* font-weight: 100px; */
+      color: rgb(0, 196, 0);
      }
      @media(max-width: 700px) {
         .process-section {
@@ -1863,7 +2117,7 @@ line-height: 32px;
      /* ===================STYLKE US START================= */
      .body-us {
         /* background: rgb(244, 241, 241); */
-        background: url(/public/images/background_us_1.png);
+        /* background: url(/public/images/background_us_1.png); */
         background-position: center;
         background-size: cover;
      }
@@ -2030,3 +2284,4 @@ line-height: 32px;
     }
     /* ================ */
         /* ====================STYLE US END================== */
+        

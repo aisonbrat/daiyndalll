@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+                                 <!-- CSS -->
+    <link rel="stylesheet" href="/public/css/style.css">
+     
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap" rel="stylesheet"> 
+    <!-- end fonts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+<!-- font awesome -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/9ab56b06a3.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"></script>
+<!-- end awesome -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+       
+        <script src="https://kit.fontawesome.com/9ab56b06a3.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"></script>
+    
+<title>PMP Academy</title>
+</head>
+
+<body>  
+    
+    <!-- section header start -->
+    <section class="header" id="header-block">
+        
+        <%- include('blocks/menu.ejs') %>
+        <div class="text-box" id="text-box">
+                <h1 class="class-pmp">PRACTICE MAKES PERFECT</h1>
+                <h1 class="academy">Academy</h1>
+                <h3>Start practicing with us.</h3>
+                <div  data-aos="fade-left" data-aos-duration="1000">
+                <a href="#contact-block" class="read-btn">MORE INFORMATION</a>
+        </div></div>
+        <script src="/index.js"></script>
+    </section>
+   <!-- header-main page section end -->
+
+
+
+  <!-- about  seection/block start -->
+  <!-- <section class="about-section">
+      <div class="iblock">
+          <div class="hline"></div>
+          <div class="clear"></div>
+      </div>
+      <h3 class="ih1">convenient and progressive</h3>
+      <p class="ip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+  </section> -->
+  <!-- end about -->
+  
+  <!-- about-block start -->
+  <section class="about-block" id="about-block">
+      <div class="about-block-div">
+        <div class="about-block_in-line"> </div>
+        <div class="about-title-div">
+          <h4 class="about-us-title">ABOUT⠀US</h4>
+      </div>
+          <p class="about-texxt-body">PMP Academy - the online platform. <br><br>The main goal of our academy is to coordinate students through their preparation. <br><br>This software is the project of 3 students who want to help their peers. <br><br>We, as the previous test takers, felt the whole pallet of pressure created by the lack of progress and coordination, we and do not want the future generations to feel the same.</p>
+        </div>
+  </section>
+  <!-- about-block end -->
+
+
+
+   <!-- new section INFO -->
+   <section class="info">
+    <div class="iblock" id="info-block">
+        <div class="hline"></div>
+    </div>
+    <h1 class="ih1">PRICES</h1>
+    <!-- <p class="ip">Subscribe to FREE TRIAL testing, <br> if you like it subscribe to PAID testing for practice further. <br>PMP Academy </p> -->
+    
+    <div class="cards">
+        <div class="card shadow">
+        <ul>
+          <li class="pack">2 hours</li>
+          <li id="basic" class="price bottom-bar">FREE</li>
+          <li class="bottom-bar">To try to practice <br>⠀</li>
+          <li class="bottom-bar">⠀</li>
+          <li class="bottom-bar">⠀</li>
+        </ul>
+        <button class="btn"><a href="#contact-block">Learn More</a></button>
+      </div>
+      <div class="card active">
+        <ul>
+          <li class="pack">1 week</li>
+          <li id="professional" class="price bottom-bar">2000 ₸</li>
+          <li class="bottom-bar">Unlimit price for 1 week <br> for each subject</li>
+          <li class="bottom-bar">⠀</li>
+          <li class="bottom-bar">⠀</li>
+          <!-- <li><button class="btn active-btn">Learn More</button></li> -->
+        </ul>
+          <button class="btn active-btn"><a href="#contact-block">Learn More</a></button>
+      </div>
+      <div class="card shadow">
+        <ul>
+          <li class="pack">3 weeks</li>
+          <li id="master" class="price bottom-bar">5000 ₸</li>
+          <li class="bottom-bar">Unlimit practice for 3 weeks</li>
+          <li class="bottom-bar">⠀</li>
+          <li class="bottom-bar">⠀</li>
+          <!-- <li><button class="btn">Learn More</button></li> -->
+        </ul>
+        <button class="btn"><a href="#contact-block">Learn More</a></button>
+      </div>
+    </div>
+<!-- <div class="back-row">
+    <div class="price-row">
+          <div data-aos="fade-down-left" data-aos-duration="1000">
+        <div class="price-col">
+            <h3 class="name-logo">2 hour</h3>
+            <h3>FREE TRIAL</h3>
+            <ul>
+                <li>Unlimit practice for 2 hours</li>
+                <li>1 subject</li>
+                <li>⠀</li>
+                <li>⠀</li>
+                <li>⠀</li>
+            </ul>
+            <div class="inner__button__start"><a href="#">GET STARTED</a></div>
+        </div>
+      </div>
+        <div data-aos="fade-down-left" data-aos-duration="2000">
+        <div class="price-col">
+            <h3 class="name-logo"> 1 Week</h3>
+            <h3>2000 TG</h3>
+            <ul>
+                <li>Unlimit practice for 1 week</li>
+                  <li>1 subject</li>
+                  <li>⠀</li>
+                  <li>⠀</li>
+                  <li>⠀</li>
+            </ul>
+            <div class="inner__button__start"><a href="#">GET STARTED</a></div>
+          </div>
+        </div>
+        <div data-aos="fade-down-left" data-aos-duration="3000">
+        <div class="price-col">
+            <h3 class="name-logo"> 3 Weeks</h3>
+            <h3>5000 TG</h3>
+            <ul>
+              <li>Unlimit practice for 3 weeks</li>
+                <li>1 subject</li>
+                <li>⠀</li>
+                <li>⠀</li>
+                <li>⠀</li>
+            </ul>
+            <div class="inner__button__start"><a href="#">GET STARTED</a></div>
+          </div>
+        </div>
+
+    </div>
+</div> -->
+</section>
+
+
+<!-- features section start-->
+<section class="features-ribbon">
+  <h3 class="ih1">Our Features</h3>
+</section>
+<section class="features-section">    
+<div class="content-features">
+
+    <div class="flex">
+        
+        <div class="card-features" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
+            <i class="fas fa-server"></i>
+            <p class="title">Fast Server</p>
+            <p class="text">Our fast server allows to pass the test and review it.</p>
+        </div>
+
+        <div class="card-features" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+
+            <i class="fas fa-comments"></i>
+            <p class="title">Chat Support</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            
+        </div>
+
+        <div class="card-features" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
+
+            <i class="fas fa-database"></i>
+            <p class="title">Database</p>
+            <p class="text">The database of Academy storages all data of tests.</p>
+            
+        </div>
+
+        <div class="card-features" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+
+            <i class="fas fa-lock"></i>
+            <p class="title">High Security</p>
+            <p class="text">⠀⠀⠀The data cannot be accessed to anyone</p>
+            
+        </div>
+
+    </div>
+
+</div>
+</section>
+<!-- features section end -->
+
+
+<!-- =============ACTUALLY BLOCK=============== -->
+
+<section class="process-section">
+  <h3 class="ih1">How Process?</h3>
+  
+    <div class="process-column">
+<div data-aos="fade-up" data-aos-duration="700">
+      <div class="process-block">
+        <div class="justify-process-block">
+          <h4 class="process-title">ACCESS</h4>
+          <p class="process-text">Manager gives to user definite time to access</p>
+        </div>
+      </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="700">
+      <div class="process-block">
+        <div class="justify-process-block">
+          <h4 class="process-title">UNLIMITED PRACTICE</h4>
+          <p class="process-text">User can prepare to passing tests unlimit times</p>
+        </div>
+      </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="700">
+      <div class="process-block">
+        <div class="justify-process-block">
+          <h4 class="process-title">REVIEW</h4>
+          <p class="process-text">User can check review, work with review, <br> after each passing test, every time</p>
+        </div>
+      </div>
+      </div>
+<div data-aos="fade-up" data-aos-duration="700">
+      <div class="process-block">
+        <div class="justify-process-block">
+          <h4 class="process-title">TECH HELPING</h4>
+          <p class="process-text">User can chat with admin/manager every time, <br> writing to the email address, or Whatsapp</p>
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- <script>
+  window.addEventListener('scroll', reveal);
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i=0; i<reveals.length; i++) {
+
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 170;
+
+      if (revealtop < windowheight - revealpoint) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+</script> -->
+<!-- =========ACTUALLY BLOCK END================ -->
+  
+<!------------CONTACT SECTION START----------- -->
+<section class="contact-section" id="contact-block">
+  
+    <div class="section-header">You want to practice to <span class="colornyi">the UNT</span>, but you don't have <br> <span class="colornyi">effective source?</span></div>
+    <div class="section-header-under">Just <span class="colornyi-under">contact us</span>, read more information about the <span class="colornyi">PMP Academy.</span></div>
+    <div class="foo">
+    <form class="contact-form" action="https://formspree.io/f/xjvlzzqq" method="POST">      
+        <input name="name" class="feedback-input" placeholder="Name" />   
+        <input name="email" type="email" class="feedback-input" placeholder="Email" />
+        <input name="number" class="feedback-input" placeholder="Phone number" />   
+        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+        <!-- <input type="submit" value="SUBMIT"/> -->
+        <button type="submit">SUBMIT</button>
+       
+      </form>
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Nur-Sultan, Kazakhstan</span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">8-747-748-48-46</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">zhaksytayev@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <a href="https://t.me/+_ezX-HkcWIdmNmYy" target="_blank" class="contact-icon"> <li>
+                <i class="fa fa-telegram" aria-hidden="true"></i></li></a>
+              
+                <a href="https://vk.com/zhaksytayev" target="_blank" class="contact-icon"> <li>
+                  <i class="fa fa-vk" aria-hidden="true"></i></li></a>
+                  <a href="https://www.instagram.com/zhaksytayev/" target="_blank" class="contact-icon"> <li>
+                    <i class="fa fa-instagram aria-hidden="true"></i></li></a>
+                
+
+        
+        </ul>
+        <hr>
+      </div>
+    </div>
+  </section>  
+
+  
+  <!-- -----------CONTACT SECTION END-------------- -->
+
+
+  <!-- ------------ MAP BLOCK---------------- -->
+<section class="map-block">
+      
+
+  <h3 class="h3-contact" >We are located</h3>
+  
+  <div class="map-class" id="map"></div>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNH8ocJ8VTE4YjS7Aoa2udysi65dmZT2Q&callback=initMap&v=weekly"defer></script>
+  <script>
+    
+  function initMap() {
+    
+  const astanaExpo = { lat: 51.091141, lng: 71.417444 };
+  
+  const map = new google.maps.Map(document.getElementById("map"), {
+  zoom: 15,
+  center: astanaExpo,
+  });
+
+  const marker = new google.maps.Marker({
+  position: astanaExpo,
+  map: map,
+  });
+  }
+
+  window.initMap = initMap;
+  </script>
+  
+</section>  
+  <!-- ------------ MAP BLOCK---------------- -->
+
+
+
+  
+
+<!-- --------------- -->
+<section class="pre-footer-section">
+
+</section>
+<!-- --------------- -->
+
+
+<!-- footer start -->
+<%- include('blocks/footer.ejs') %>
+
+<!-- footer end -->
+
+<script>
+    $(function() {
+        let gotop = $(".gotopbtn");
+        let header = $("#section-header");
+        let intro = $("#header-block");
+        let introH = intro.innerHeight();
+        let scrollPos = $(window).scrollTop();
+        
+        $(window).on("scroll load resize", function() {
+        let introH = intro.innerHeight();
+
+            scrollPos = $(this).scrollTop(); 
+
+            if (scrollPos > introH) {
+                header.addClass("fixed");
+                gotop.removeClass("transparent");
+            } else {
+                header.removeClass("fixed");
+                gotop.addClass("transparent");
+
+            }
+        })
+
+    });
+    
+</script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- <script>
+  const contactForm = document.querySelector('.contact-form');
+  let name = document.getElementById('name');
+  let email = document.getElementById('email');
+  let subject = document.getElementById('subject');
+  let phone = document.getElementById('phone');
+  let message = document.getElementById('message');
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let formData = {
+      name: name.value,
+      email: email.value,
+      subject: email.value,
+      phone: phone.value,
+      message: message.value
+    }
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/suc');
+    xhr.setRequestHeader('content-type', 'application/json');
+    xhr.onload = function() {
+      console.log(xhr.responseText);
+      if (xhr.responseText == "success") {
+        alert('Email sent');
+        name.value = '';
+        email.value = '';
+        subject.value = '';
+        phone.value = '';
+        message.value = '';
+      } else {
+        alert("Something went wrong!");
+      }
+    }
+    xhr.send(JSON.stringify(formData));
+
+  })
+</script> -->
+<div class="gotop-block" id="gotop">
+    <a class="gotopbtn" href="#header-block"> <i class="fas fa-arrow-up"></i> </a>
+</div>
+</body>
+</html>
+
+<style>
+   
+    
+</style>

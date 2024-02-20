@@ -41,13 +41,21 @@
     <section class="header" id="header-block">
         
         <%- include('blocks/menu.ejs') %>
-        <div class="text-box" id="text-box">
-                <h1 class="class-pmp">PRACTICE MAKES PERFECT</h1>
-                <h1 class="academy">Academy</h1>
-                <h3>Start practicing with us.</h3>
-                <div  data-aos="fade-left" data-aos-duration="1000">
+        <div class="center-content">
+          <div class="text-box">
+            <div class="left-col">
+              <h1 class="academy">Daiyndal</h1>
+              <h1 class="class-pmp">Platform</h1>
+              <p>Start practicing with us.</p>
+              <div data-aos="fade-left" data-aos-duration="1000">
                 <a href="#contact-block" class="read-btn">MORE INFORMATION</a>
-        </div></div>
+              </div>
+            </div>
+            <div class="image-main">
+              <img src="/public/images/Illustration.svg" alt="">
+            </div>
+          </div>
+        </div>
         <script src="/index.js"></script>
     </section>
    <!-- header-main page section end -->
@@ -66,14 +74,7 @@
   <!-- end about -->
   
   <!-- about-block start -->
-  <section class="about-block" id="about-block">
-      <div class="about-block-div">
-        <div class="about-block_in-line"> </div>
-        <div class="about-title-div">
-          <h4 class="about-us-title">ABOUT⠀US</h4>
-      </div>
-          <p class="about-texxt-body">PMP Academy - the online platform. <br><br>The main goal of our academy is to coordinate students through their preparation. <br><br>This software is the project of 3 students who want to help their peers. <br><br>We, as the previous test takers, felt the whole pallet of pressure created by the lack of progress and coordination, we and do not want the future generations to feel the same.</p>
-        </div>
+ 
   </section>
   <!-- about-block end -->
 
@@ -81,46 +82,109 @@
 
    <!-- new section INFO -->
    <section class="info">
-    <div class="iblock" id="info-block">
-        <div class="hline"></div>
+    <h1 class="ih1">HOW MUCH?</h1>
+
+    <div class="wrapper">
+      <div class="table basic">
+        <div class="price-section">
+          <div class="price-area">
+            <div class="inner-area">
+              <span class="text">$</span>
+              <span class="price">8</span>
+            </div>
+          </div>
+        </div>
+        <div class="package-name"></div>
+        <ul class="features">
+          <li>
+            <span class="list-name">One Selected Template</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">100% Responsive Design</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Credit Remove Permission</span>
+            <span class="icon cross"><i class="fas fa-times"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Lifetime Template Updates</span>
+            <span class="icon cross"><i class="fas fa-times"></i></span>
+          </li>
+        </ul>
+        <div class="btn"><button>Purchase</button></div>
+      </div>
+      <div class="table premium">
+        <div class="ribbon"><span>Recommend</span></div>
+        <div class="price-section">
+          <div class="price-area">
+            <div class="inner-area">
+              <span class="text">$</span>
+              <span class="price">20</span>
+            </div>
+          </div>
+        </div>
+        <div class="package-name"></div>
+        <ul class="features">
+          <li>
+            <span class="list-name">Five Existing Templates</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">100% Responsive Design</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Credit Remove Permission</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Lifetime Template Updates</span>
+            <span class="icon cross"><i class="fas fa-times"></i></span>
+          </li>
+        </ul>
+        <div class="btn"><button>Purchase</button></div>
+      </div>
+      <div class="table ultimate">
+        <div class="price-section">
+          <div class="price-area">
+            <div class="inner-area">
+              <span class="text">$</span>
+              <span class="price">25</span>
+            </div>
+          </div>
+        </div>
+        <div class="package-name"></div>
+        <ul class="features">
+          <li>
+            <span class="list-name">All Existing Templates</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">100% Responsive Design</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Credit Remove Permission</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+          <li>
+            <span class="list-name">Lifetime Template Updates</span>
+            <span class="icon check"><i class="fas fa-check"></i></span>
+          </li>
+        </ul>
+        <div class="btn"><button>Purchase</button></div>
+      </div>
     </div>
-    <h1 class="ih1">PRICES</h1>
-    <!-- <p class="ip">Subscribe to FREE TRIAL testing, <br> if you like it subscribe to PAID testing for practice further. <br>PMP Academy </p> -->
-    
-    <div class="cards">
-        <div class="card shadow">
-        <ul>
-          <li class="pack">2 hours</li>
-          <li id="basic" class="price bottom-bar">FREE</li>
-          <li class="bottom-bar">To try to practice <br>⠀</li>
-          <li class="bottom-bar">⠀</li>
-          <li class="bottom-bar">⠀</li>
-        </ul>
-        <button class="btn"><a href="#contact-block">Learn More</a></button>
-      </div>
-      <div class="card active">
-        <ul>
-          <li class="pack">1 week</li>
-          <li id="professional" class="price bottom-bar">2000 ₸</li>
-          <li class="bottom-bar">Unlimit price for 1 week <br> for each subject</li>
-          <li class="bottom-bar">⠀</li>
-          <li class="bottom-bar">⠀</li>
-          <!-- <li><button class="btn active-btn">Learn More</button></li> -->
-        </ul>
-          <button class="btn active-btn"><a href="#contact-block">Learn More</a></button>
-      </div>
-      <div class="card shadow">
-        <ul>
-          <li class="pack">3 weeks</li>
-          <li id="master" class="price bottom-bar">5000 ₸</li>
-          <li class="bottom-bar">Unlimit practice for 3 weeks</li>
-          <li class="bottom-bar">⠀</li>
-          <li class="bottom-bar">⠀</li>
-          <!-- <li><button class="btn">Learn More</button></li> -->
-        </ul>
-        <button class="btn"><a href="#contact-block">Learn More</a></button>
-      </div>
-    </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 <!-- <div class="back-row">
     <div class="price-row">
           <div data-aos="fade-down-left" data-aos-duration="1000">
@@ -287,7 +351,7 @@
 <section class="contact-section" id="contact-block">
   
     <div class="section-header">You want to practice to <span class="colornyi">the UNT</span>, but you don't have <br> <span class="colornyi">effective source?</span></div>
-    <div class="section-header-under">Just <span class="colornyi-under">contact us</span>, read more information about the <span class="colornyi">PMP Academy.</span></div>
+    <div class="section-header-under">Just <span class="colornyi-under">contact us</span>, read more information about the <span class="colornyi">Daiyndal Academy.</span></div>
     <div class="foo">
     <form class="contact-form" action="https://formspree.io/f/xjvlzzqq" method="POST">      
         <input name="name" class="feedback-input" placeholder="Name" />   
@@ -332,36 +396,7 @@
 
 
   <!-- ------------ MAP BLOCK---------------- -->
-<section class="map-block">
-      
 
-  <h3 class="h3-contact" >We are located</h3>
-  
-  <div class="map-class" id="map"></div>
-
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNH8ocJ8VTE4YjS7Aoa2udysi65dmZT2Q&callback=initMap&v=weekly"defer></script>
-  <script>
-    
-  function initMap() {
-    
-  const astanaExpo = { lat: 51.091141, lng: 71.417444 };
-  
-  const map = new google.maps.Map(document.getElementById("map"), {
-  zoom: 15,
-  center: astanaExpo,
-  });
-
-  const marker = new google.maps.Marker({
-  position: astanaExpo,
-  map: map,
-  });
-  }
-
-  window.initMap = initMap;
-  </script>
-  
-</section>  
   <!-- ------------ MAP BLOCK---------------- -->
 
 
@@ -369,9 +404,7 @@
   
 
 <!-- --------------- -->
-<section class="pre-footer-section">
 
-</section>
 <!-- --------------- -->
 
 

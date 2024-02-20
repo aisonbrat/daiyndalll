@@ -36,7 +36,7 @@ exports.login_post = async (req, res) => {
     req.session.isAuth = true;
     console.log(req.body);
     req.session.user = user
-    res.redirect("profile");
+    res.redirect("account-settings");
 };
 
 exports.register_get = (req, res) => {
@@ -287,6 +287,26 @@ exports.ml2 = async (req, res) => {
     let neededVar = []
     variant1.forEach(function (v) {
         if (v.dependent === "ML Variant2") {
+            neededVar.push(v)
+        }
+    })
+    res.render('mcq', {variant: neededVar});
+};
+exports.eng1 = async (req, res) => {
+    const variant1 = await Question.find()
+    let neededVar = []
+    variant1.forEach(function (v) {
+        if (v.dependent === "eng1") {
+            neededVar.push(v)
+        }
+    })
+    res.render('mcq', {variant: neededVar});
+};
+exports.phys1 = async (req, res) => {
+    const variant1 = await Question.find()
+    let neededVar = []
+    variant1.forEach(function (v) {
+        if (v.dependent === "phys1") {
             neededVar.push(v)
         }
     })

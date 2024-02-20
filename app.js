@@ -1,4 +1,4 @@
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5002;
 const express = require("express");
 const session = require("express-session");
 // const MongoDBStore = require("connect-mongodb-session")(session);
@@ -60,10 +60,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   session({
-    secret: "secret",
-    cookie: {maxAge: 600000000000},
+    secret: "secret",        
+    cookie: {maxAge: 600000000000000},
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: true,  
   })
 );
 
@@ -140,13 +140,37 @@ app.get('/ml', hasAccess, (req, res) => { //method send is convenience to send s
   res.render(__dirname + '/views/ml.ejs'); //__dirname is to get absolute path to file.
 })
 
+app.get('/eng', hasAccess, (req, res) => { //method send is convenience to send some strings,but there are pretty big size of code, it is not convenience. for this sendFile funciton is better
+  res.render(__dirname + '/views/eng.ejs'); //__dirname is to get absolute path to file.
+})
+
+app.get('/phys', hasAccess, (req, res) => { //method send is convenience to send some strings,but there are pretty big size of code, it is not convenience. for this sendFile funciton is better
+  res.render(__dirname + '/views/phys.ejs'); //__dirname is to get absolute path to file.
+})
+
 // ------VIDEO-----------
 app.get('/hok-video', isAuth, (req, res) => { //method send is convenience to send some strings,but there are pretty big size of code, it is not convenience. for this sendFile funciton is better
   res.render(__dirname + '/views/hok-video.ejs'); //__dirname is to get absolute path to file.
 })
+
+app.get('/ml-video', isAuth, (req, res) => { //method send is convenience to send some strings,but there are pretty big size of code, it is not convenience. for this sendFile funciton is better
+  res.render(__dirname + '/views/ml-video.ejs'); //__dirname is to get absolute path to file.
+})
+app.get('/rl-video', isAuth, (req, res) => { //method send is convenience to send some strings,but there are pretty big size of code, it is not convenience. for this sendFile funciton is better
+  res.render(__dirname + '/views/rl-video.ejs'); //__dirname is to get absolute path to file.
+})
+app.get('/eng-video', isAuth, (req, res) => { //method send is convenience to send some strings,but there are pretty big size of code, it is not convenience. for this sendFile funciton is better
+  res.render(__dirname + '/views/eng-video.ejs'); //__dirname is to get absolute path to file.
+})
+app.get('/phys-video', isAuth, (req, res) => { //method send is convenience to send some strings,but there are pretty big size of code, it is not convenience. for this sendFile funciton is better
+  res.render(__dirname + '/views/phys-video.ejs'); //__dirname is to get absolute path to file.
+})
+  
 app.get('/ielts-video', isAuth, (req, res) => { //method send is convenience to send some strings,but there are pretty big size of code, it is not convenience. for this sendFile funciton is better
   res.render(__dirname + '/views/ielts-video.ejs'); //__dirname is to get absolute path to file.
 })
+
+
 // ------------
 app.get('/sat-page', isAuth, (req, res) => { //method send is convenience to send some strings,but there are pretty big size of code, it is not convenience. for this sendFile funciton is better
   res.render(__dirname + '/views/sat-variants.ejs'); //__dirname is to get absolute path to file.
@@ -166,6 +190,9 @@ app.get('/rl1', isAuth, appController.rl1)
 
 app.get('/ml1', isAuth, appController.ml1)
 app.get('/ml2', isAuth, appController.ml2)
+
+app.get('/eng1', isAuth, appController.eng1)
+app.get('/phys1', isAuth, appController.phys1)
 
 
 app.get('/hok_var1', isAdmin, appController.hok_var1)
@@ -215,6 +242,6 @@ app.use(isAuth, (req, res, next) => {
 })
 
 
-app.listen(port, console.log("App Running on http://localhost:5000"));
+app.listen(port, console.log("App Running on http://localhost:5002"));
 
 

@@ -1,0 +1,157 @@
+[{
+  "options": [
+    "to ring",
+    "to find",
+    "to hid",
+    "to call",
+    "to read"
+  ],
+  "question": "«To lose» сөзінің антонимін табыңыз.",
+  "answer": "to find",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "isn’t he",
+    "isnt’t my father",
+    "does he",
+    "does my father",
+    "is he"
+  ],
+  "question": "Дұрыс жауабын таңдаңыз:\nMy father is from Astana, ….?",
+  "answer": "isnt’t my father",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "етістік",
+    "герундий",
+    "зат есім",
+    "үстеу",
+    "жалғаулық шылау"
+  ],
+  "question": "Берілген сөз қай сөз табына жатады?\nEvolution",
+  "answer": "зат есім",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "I think it don’t work",
+    "Doesn’t play with a book",
+    "She doesn’t fond of the classical music",
+    "Tom don’t like reading a book",
+    "I don’t have much money"
+  ],
+  "question": "Дұрыс құрылған сөйлемді көрсетіңіз.",
+  "answer": "I don’t have much money",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "Vowel",
+    "Consonant",
+    "Adjective",
+    "Verb",
+    "Noun"
+  ],
+  "question": "Кері мағынасы бар сөзді табыңыз:\nCat",
+  "answer": "Adjective",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "a",
+    "an",
+    "the",
+    "some",
+    "none"
+  ],
+  "question": "Which article is used before the word 'umbrella'?",
+  "answer": "an",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "an",
+    "a",
+    "the",
+    "some",
+    "none"
+  ],
+  "question": "Which article is used before the word 'apple'?",
+  "answer": "an",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "in",
+    "on",
+    "at",
+    "to",
+    "from"
+  ],
+  "question": "Choose the correct preposition:\nI usually go to bed ____ 10 o'clock.",
+  "answer": "on",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "for",
+    "with",
+    "to",
+    "on",
+    "at"
+  ],
+  "question": "Choose the correct preposition:\nI'm angry ____ you because you broke my toy.",
+  "answer": "for",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "none",
+    "whom",
+    "who",
+    "whose",
+    "which"
+  ],
+  "question": "Choose the correct relative pronoun:\nThe girl ____ brother is a doctor.",
+  "answer": "who",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "is",
+    "are",
+    "were",
+    "am",
+    "been"
+  ],
+  "question": "Choose the correct form of the verb 'to be':\nThe students ____ listening to the teacher.",
+  "answer": "are",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "a",
+    "an",
+    "the",
+    "some",
+    "none"
+  ],
+  "question": "Choose the correct article:\nThere is ___ orange on the table.",
+  "answer": "an",
+  "__v": 0,
+  "dependent": "eng1"
+},{
+  "options": [
+    "at",
+    "on",
+    "in",
+    "from",
+    "to"
+  ],
+  "question": "Choose the correct preposition:\nShe is waiting ____ the bus stop.",
+  "answer": "at",
+  "__v": 0,
+  "dependent": "eng1"
+}]

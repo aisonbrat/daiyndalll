@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/edu-style.css">
+    
+     <!--========== BOX ICONS ==========-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
+    <title>Profile</title>
+    
+  </head>
+  <body>
+    <%- include('blocks/header-main') %>
+     <!--========== CONTENTS ==========-->
+     <main>
+        <section class="price-call-row">
+            <h1 style="display: flex; justify-content: center;">Математикалық Сауаттылық пәнінен видеосабақ</h1>
+
+          <div class="container">
+            <div class="video-column">
+              <!-- Embed YouTube video -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+          
+            <div class="content-column">
+              <h2 class="video-title">Video Title</h2>
+              <p class="video-description">
+                This is where you can provide a description of the video content. You can include information about what the video covers, its purpose, and any other relevant details.
+              </p>
+              <p class="video-description">
+                You can also include additional text content related to the video, such as instructions, supplementary materials, or links to related resources.
+              </p>
+            </div>
+          </div>
+        </section>
+    </main>
+<%- include('blocks/footer-main') %>
+</body>
+</html>
+
+<style>
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .video-column,
+  .content-column {
+    width: 45%; /* Adjusted width for the two columns */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+  }
+  .video-column {
+    background-color: transparent;
+  }
+
+  .video-column iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+
+  .video-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .video-description {
+    line-height: 1.6;
+  }
+</style>

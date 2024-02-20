@@ -1,7 +1,7 @@
 module.exports = (req, res, next) => {
-    if (req.session.user.hasAccess === true) {
+    if (req.session && req.session.user && req.session.user.hasAccess === true) {
         next();
     } else {
-        res.render('unt0')
+        res.render('unt0');
     }
 };
